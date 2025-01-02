@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MyApp</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="product_image_description">Product image</string>
 
 </resources>

@@ -4,40 +4,42 @@
     android:orientation="vertical"
     android:padding="8dp">
 
-    <!-- Title EditText -->
-    <EditText
-        android:id="@+id/titleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:padding="12dp"
-        android:textColor="?android:attr/textColorPrimary"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:inputType="textMultiLine|text"
-        android:scrollHorizontally="false"
-        android:imeOptions="actionNone"
-        android:autofillHints="autofillHints"
-        android:importantForAccessibility="yes"
-        android:contentDescription="Enter the title here"
-        android:minHeight="48dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/product_image_description"
+        />
 
-    <!-- Body EditText -->
     <EditText
-        android:id="@+id/bodyTextView"
+        android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:hint="Enter title" />
+
+    <EditText
+        android:id="@+id/bodyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:textSize="14sp"
+        android:hint="Enter description" />
+
+    <EditText
+        android:id="@+id/additionalInfoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:textSize="14sp"
+        android:paddingTop="8dp"
         android:background="@android:color/transparent"
-        android:padding="12dp"
-        android:textColor="?android:attr/textColorPrimary"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:inputType="textMultiLine|text"
-        android:scrollHorizontally="false"
-        android:imeOptions="actionNone"
-        android:autofillHints="autofillHints"
-        android:importantForAccessibility="yes"
-        android:contentDescription="Enter the body content here"
-        android:minHeight="48dp" />
+        android:hint="Edit additional info" />
+
 
 </LinearLayout>
