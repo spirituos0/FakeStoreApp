@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine|text"
+        android:scrollHorizontally="false"
+        android:imeOptions="actionNone"
+        android:autofillHints="autofillHints"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Enter the title here"
+        android:minHeight="48dp" />
+
+    <!-- Body EditText -->
+    <EditText
+        android:id="@+id/bodyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine|text"
+        android:scrollHorizontally="false"
+        android:imeOptions="actionNone"
+        android:autofillHints="autofillHints"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Enter the body content here"
+        android:minHeight="48dp" />
+
+</LinearLayout>
